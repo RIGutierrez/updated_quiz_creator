@@ -19,7 +19,7 @@ class QuizCreator:
         except Exception as error:
             print(f"[!] Sound error:\n    {error}")
 
-    def user_input_question_answers():
+    def user_input_question_answers(self):
     
         # ask user for question and choices
         question = input("Enter your quiz question: ")
@@ -47,7 +47,7 @@ class QuizCreator:
 
     # save the question, choices, and answer key as txt
     # take parameters for saving question
-    def saved_user_questions_answers(data, filename="input_questions_answer.txt"):
+    def saved_user_questions_answers(self, data):
     
         with open(self.output_file, "a", encoding="utf-8") as file:
             file.write(f"Question: {data['question']}\n")
